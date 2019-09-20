@@ -12,11 +12,13 @@ You will get your API KEY after registeration.
 ### Usage
 
 Include pingmelive
-
+```html
 <script src="pingmelive.min.js"></script>
-<script type = "text/javascript">
-  var pingmelive = new pingMeLive(apiKey,appID,errorStatus,errorName);
-</script>
+<script type = "text/javascript"> 
+  var pingmelive = new pingMeLive(apiKey,appID,errorStatus,errorName); 
+</script> 
+
+```
 
 ...and you are done!
 
@@ -33,13 +35,13 @@ If you want to send some detailed long description you can use `Detailed event`
 pingMeLive.simpleEvent(groupTitle,eventMessage,detailDescription);
 
 ### Options
-apiKey : You will get an API KEY when you will register on pingmelive.com 
-appID : You will get an APP ID when you will register on pingmelive.com 
-errorStatus : true / false
-errorName : 
-groupTitle : 
-eventMessage :
-detailDescription : 
+* apiKey : You will get an `API KEY` when you will register on pingmelive.com
+* appID : You will get an `APP ID` when you will register on pingmelive.com 
+* errorStatus : true / false
+* errorName : 
+* groupTitle : 
+* eventMessage :
+* detailDescription : 
 
 ## Some usefull information
 

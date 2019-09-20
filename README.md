@@ -27,12 +27,15 @@ Include pingmelive
 You can also use pingMeLive for sending custom events.
 
 ### 1.Simple event
+```html
 pingMeLive.simpleEvent(groupTitle,eventMessage);
-      
+ ```    
 
 If you want to send some detailed long description you can use `Detailed event`
 ### 2.Detailed event
+```html
 pingMeLive.detailedEvent(groupTitle,eventMessage,detailDescription);
+```
 
 ### Options
 * apiKey : You will get an `API KEY` when you will register on pingmelive.com

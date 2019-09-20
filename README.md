@@ -1,4 +1,4 @@
-# Library to handle error
+# Library to handle live events / Error Live Reporting
 
 This library allows you to get all the error.
 

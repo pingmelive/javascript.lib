@@ -2,23 +2,25 @@
 
 This is a library which helps you to get LIVE notifications of actions taking place on your webistes and applications.
 Just Copy past the below codes and get live updates of errors and actions. Make Categories of pings based on projects (etc) and assign it to your team mates.
-That's what PING ME LIVE does.
+That's what PingMeLive does.
 Easy right!.
 
 ## How to use
 
 ### Register yourself on
-[https://pingmelive.com](https://pingmelive.com)
-You will get your API KEY after registeration.
+
+[https://pingmelive.com](https://pingmelive.com) **and get your `API KEY`**.
 
 
 ### Usage
 
-Include pingmelive
+Include pingMeLive Library
+
+**`Note` It doesn't require any jQuery Library, Its Independent and light(<3KB).
 ```html
 <script src="pingmelive.min.js"></script>
 <script type = "text/javascript"> 
-  var pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
+  var pingmelive = new pingMeLive("apiKey","projectID","errorStatus(true/false)","errorName"); 
 </script> 
 
 ```
@@ -31,27 +33,32 @@ You can also use pingMeLive for sending custom events.
 
 ### 1.Simple event
 ```html
-pingMeLive.simpleEvent(groupTitle,eventMessage);
+<script>
+  //To trigger Simple Event, Just call the below function.
+  pingMeLive.simpleEvent("groupTitle","eventMessage");
+</script>
  ```    
 
 If you want to send some detailed long description you can use `Detailed event`
 ### 2.Detailed event
 ```html
-pingMeLive.detailedEvent(groupTitle,eventMessage,detailDescription);
+<script>
+  //To trigger Simple Event, Just call the below function.
+  pingMeLive.detailedEvent("groupTitle","eventMessage","detailDescription");
+</script>
 ```
 
 ### Options
-* apiKey : You will get an `API KEY` when you will register on pingmelive.com
-* appID : You will get an `PROJECT ID` when you will register on pingmelive.com 
-* errorStatus : true / false
-* errorName : 
-* groupTitle : 
-* eventMessage :
-* detailDescription : 
+* **apiKey** : To get an `API KEY` , register on pingmelive.com. Its free to use.
+* **projectID** : Once registered, Click on New Project to create. 
+* **errorStatus** : `true` / `false` (Boolen Value).
+* **errorName** : This will be your `Group Title/Name` where all the error will be pinged.(This works when `errorStatus` is set as `true`.
+* **groupTitle** : This will be your `Group Tilte/Name` under which , you will get all your pings.
+* **eventMessage** : The `errorMessage` is limited to 360 character in length. Any additional characters beyond 360 character will be truncated.
+* **detailDescription** : The `detailDescription` is does not have any length limitation. You can also send JSON Formatted String / or simple plain string.
 
 ## Some usefull information
 
-* Only `Detailed event` will by default contain the information like device info,app version code etc.
-* If you only want error event just install the library and thats it, no need to code anything else.
-* You can smartly use group title for you custom events.
+* If you only want error pings, Just include the `pingMeLive library` and and `Intialize` it.
+* You can smartly use `groupTitle` for creating uniques group for your pings.
 

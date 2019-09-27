@@ -18,7 +18,7 @@ Include pingmelive
 ```html
 <script src="pingmelive.min.js"></script>
 <script type = "text/javascript"> 
-  var pingmelive = new pingMeLive(apiKey,appID,errorStatus,errorName); 
+  var pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
 </script> 
 
 ```
@@ -42,7 +42,7 @@ pingMeLive.detailedEvent(groupTitle,eventMessage,detailDescription);
 
 ### Options
 * apiKey : You will get an `API KEY` when you will register on pingmelive.com
-* appID : You will get an `APP ID` when you will register on pingmelive.com 
+* appID : You will get an `PROJECT ID` when you will register on pingmelive.com 
 * errorStatus : true / false
 * errorName : 
 * groupTitle : 

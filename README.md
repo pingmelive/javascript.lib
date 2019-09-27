@@ -16,7 +16,7 @@ Easy right!.
 
 Include pingMeLive Library
 
-**`Note` It doesn't require any jQuery Library, Its Independent and light(<3KB).
+`Note` **It doesn't require any jQuery Library, Its Independent and light(<3KB).
 ```html
 <script src="pingmelive.min.js"></script>
 <script type = "text/javascript"> 

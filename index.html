@@ -1,0 +1,20 @@
+<!doctype>
+<html>  
+<head>  
+<title>pingMeLive Example</title>
+<script type='text/javascript' src="pingmelive.min.js?v1.0"></script>
+</head>  
+<body>  
+<h3>Welcome to pingMeLive Example.</h3> 
+<p>Does Not Require any jQuery Library</p>
+<form>
+   <input type="button" value="SimpleEvent" onclick="pingMeLive.simpleEvent('Javascript Simple Event','Event Message goes Here. The max length is 360 character.')"/> 
+   <input type="button" value="DetailedEvent" onclick="pingMeLive.detailedEvent('Javascript Long Event','Long Event Message goes Here The max length is 360 character.',' Detail description, This can be in JSON String Format. This does not have any Character Limit.')"/>  
+</form>  
+<script type="text/javascript">
+var pingMeLive=new pingMeLive("Your API Key","Project ID","Error Reporting (true/false)","Error Title");
+//error;
+
+</script>
+</body>
+</html>
